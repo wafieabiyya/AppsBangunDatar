@@ -29,29 +29,12 @@ public class Persegi extends BangunDatar {
     @Override
     double luas() {
         return sisi*sisi;
-       // throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
     }
+    
 
     @Override
     double keliling() {
         return sisi*sisi;
-     //   throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
     }
-    
-    public static void main(String[] args) {
-        Scanner sc  = new Scanner (System.in);
         
-        Persegi persegi = new Persegi();
-        double sis;
-        
-        System.out.println("Masukan Sisi: ");
-        sis = sc.nextDouble();
-        
-        persegi.setSisi(sis);
-        persegi.setNamaBangundatar("persegi");
-        
-        System.out.println("luas: "+persegi.luas());
-        System.out.println("keliling: "+persegi.keliling());
-       
-    }
 }
