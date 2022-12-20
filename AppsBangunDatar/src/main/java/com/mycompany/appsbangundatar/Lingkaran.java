@@ -10,21 +10,21 @@ package com.mycompany.appsbangundatar;
  */
 public class Lingkaran extends BangunDatar{
    static final double PHI = 3.14;
-   private int jariJari;
+   private double jariJari;
 
     public Lingkaran() {
     }
 
-    public Lingkaran(int jariJari, String namaBangundatar) {
+    public Lingkaran(double jariJari, String namaBangundatar) {
         super(namaBangundatar);
         this.jariJari = jariJari;
     }
 
-    public int getJariJari() {
+    public double getJariJari() {
         return jariJari;
     }
 
-    public void setJariJari(int jariJari) {
+    public void setJariJari(double jariJari) {
         this.jariJari = jariJari;
     }
    
@@ -39,13 +39,5 @@ public class Lingkaran extends BangunDatar{
     double keliling() {
         return 2*PHI*jariJari;
         //throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
-    }
-    public static void main(String[] args) {
-        Lingkaran lingkaran = new Lingkaran();
-        System.out.println("Menghitung Lingkaran");
-        lingkaran.setNamaBangundatar("Lingkaran");
-        lingkaran.setJariJari(5);
-        System.out.println("Luas Lingkaran: "+lingkaran.luas());
-        System.out.println("Keliling Lingkaran: "+lingkaran.keliling());
     }
 }
