@@ -9,9 +9,24 @@ package com.mycompany.appsbangundatar;
  *
  * @author lenovo
  */
-public class BangunDatar {
+abstract class BangunDatar {
+    private String namaBangundatar;
 
-    public static void main(String[] args) {
-        System.out.println("Hello World!");
+    public BangunDatar() {
     }
+
+    public BangunDatar(String namaBangundatar) {
+        this.namaBangundatar = namaBangundatar;
+    }
+
+    public String getNamaBangundatar() {
+        return namaBangundatar;
+    }
+
+    public void setNamaBangundatar(String namaBangundatar) {
+        this.namaBangundatar = namaBangundatar;
+    }
+    
+    abstract double luas();
+    abstract double keliling();
 }
